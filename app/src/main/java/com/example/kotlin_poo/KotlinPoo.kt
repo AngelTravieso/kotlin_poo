@@ -21,8 +21,13 @@ fun main() {
     /*var p1 = Player("Jhon", 20)
     p1.eat()*/
 
-    var p1 = Person("Jeff", 27)
-    var p2 = Person("Jack")
+    //var p1 = Person("Jeff", 27)
+    //var p2 = Person("Jack")
+
+    var p1 = Person()
+    p1.name = "Jack"
+
+    println(p1.name)
 
 
 }

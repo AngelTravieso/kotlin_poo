@@ -2,9 +2,13 @@ package com.example.kotlin_poo
 
 // Open for the inheritance, by default classes in kotlin are final
 open class Person {
-    constructor(name: String, age: Int) {
+    // constructor(name: String, age: Int = 0) {}
 
-    }
+    var name: String = "Jack"
+
+    // Is equivalent to:
+    get() = field // getter
+    set(value) { field = value } // setter
 
     // Executed when we have crated an object of the class
     /*init {
