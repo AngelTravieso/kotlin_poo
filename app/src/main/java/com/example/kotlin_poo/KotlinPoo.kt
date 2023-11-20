@@ -14,4 +14,12 @@ fun main() {
     // Access the Functions (Methods)
     c1.drive()
 
+    // a math teacher
+    // a football player
+    // a businessman
+
+    var p1 = Player("Jhon", 20)
+    p1.eat()
+
+
 }
