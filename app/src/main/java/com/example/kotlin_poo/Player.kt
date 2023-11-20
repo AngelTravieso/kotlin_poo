@@ -1,5 +1,8 @@
 package com.example.kotlin_poo
 
-class Player(name: String,age: Int): Person(name, age) {
-
+class Player: Person {
+    constructor(name: String, age: Int): super(name, age) {
+        // Code
+        println("Secondary constructor is being used")
+    }
 }

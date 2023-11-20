@@ -1,10 +1,16 @@
 package com.example.kotlin_poo
 
 // Open for the inheritance, by default classes in kotlin are final
-open class Person(var name: String, var age: Int) {
-    init {
+open class Person {
+    constructor(name: String, age: Int) {
+
+    }
+
+    // Executed when we have crated an object of the class
+    /*init {
         println("The Person name: $name")
         println("The Person age: $age")
+        println("We used the initializer")
     }
 
     fun talk() {
@@ -17,5 +23,5 @@ open class Person(var name: String, var age: Int) {
 
     fun eat() {
         println("$name is eating")
-    }
+    }*/
 }
