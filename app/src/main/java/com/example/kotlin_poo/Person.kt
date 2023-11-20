@@ -1,31 +1,13 @@
 package com.example.kotlin_poo
 
-// Open for the inheritance, by default classes in kotlin are final
+// Open for the inheritance and override, by default classes in kotlin are final
 open class Person {
     // constructor(name: String, age: Int = 0) {}
 
-    var name: String = "Jack"
+    // By default is public
+    open var name: String = "Jack"                 // public
+    private var age: Int = 2                       // private
+    protected open var hairColor = "Black"         // protected
+    internal var d = 6                             // internal
 
-    // Is equivalent to:
-    get() = field // getter
-    set(value) { field = value } // setter
-
-    // Executed when we have crated an object of the class
-    /*init {
-        println("The Person name: $name")
-        println("The Person age: $age")
-        println("We used the initializer")
-    }
-
-    fun talk() {
-        println("$name is talking")
-    }
-
-    fun walking() {
-        println("$name is walking")
-    }
-
-    fun eat() {
-        println("$name is eating")
-    }*/
 }
